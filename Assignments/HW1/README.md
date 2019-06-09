@@ -23,6 +23,10 @@ This agrees very well with previous results for K = 4, that is, the minimum I sh
 **Where are most of the transistors located in the FPGA, in the logic or in the interconnect? 
 Explain why Fc should be less for larger cluster sizes.**
 
+**ANS**: Most of the transistors are located in the interconnect. 
+
+Input to larger cluster can be shared through multiplexer. Besides, reduced input size can make the whole circuit faster by reducing critical path delay.
+
 ---
 
 ### EX3 Area Cost Calculation
@@ -66,3 +70,5 @@ The inclusion of more hard blocks such as multipliers and block memory helps to 
 
 ### EX9 
 **In your own words, summarize the results shown in the figure. What lesson do we learn from the results in this figure? Limit your answer to one paragraph.**
+
+**ANS** The 20Kb block and no large memory block can match the efficiency of the 10Kb block with 144Kb memory. The single 40Kb architecture is less area efficient. That is the reason why Stratix V only provides a 20Kb embedded memory block.
