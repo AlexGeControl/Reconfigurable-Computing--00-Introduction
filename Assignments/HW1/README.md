@@ -47,3 +47,22 @@ Calculate the modified transistor count for the logic block based on these modif
 **Based on our discussion in class, how many transistors are needed to build a 2K×8 memory block without input or output flip flops? 
 Based on your area analysis earlier (Q3), how many N = 6, I = 12 logic blocks (with feedback) are needed to fit the same transistor count. 
 You can ignore the transistors in the address decoders for the memory block in your analysis.**
+
+---
+
+### EX7 FPGA and ASIC Tradeoffs
+**Briefly describe some of the factors that lead to the area gap between FPGAs and ASICs for memory and multipliers. Is the inclusion of more multipliers and block memory bits per LUT in larger FPGAs likely to close the gap? Limit your answer to several paragraphs.**
+
+**ANS** The main factor that leads to the area gap between FPGAs and ASICs is FPGAs require extra area to implement the additional circuit for intra BLE connection such as that between LUT and FF and inter BLE connection such as that for block interface and routing.
+
+The inclusion of more hard blocks such as multipliers and block memory helps to close the gap because they are similar to ASIC implementation and both intra & inter element connections can be reduced.
+
+---
+
+### EX8 Interconnect Flip Flop
+**Summarize the purpose and benefits of interconnect flip flops in several paragraphs. Is adding interconnect flip flops a good idea?**
+
+---
+
+### EX9 
+**In your own words, summarize the results shown in the figure. What lesson do we learn from the results in this figure? Limit your answer to one paragraph.**
